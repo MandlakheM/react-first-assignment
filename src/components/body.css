@@ -398,3 +398,15 @@
     margin-top: 50px;
   }
 }
+
+@media screen and (max-width: 1008px) {
+  .artistWrapper{
+    display:inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .bodyContainer{
+    display:inline-flex;
+    flex-wrap: wrap;
+  }
+}
