@@ -385,3 +385,10 @@
   height: 35px;
   border-radius: 40%;
 }
+
+@media screen and (min-width:1500px) {
+  .bodyContainer, .featuredArtistContainer, .artistWrapper{
+    margin-top: 50px;
+  }
+  
+}
