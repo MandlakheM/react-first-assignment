@@ -11,6 +11,8 @@ import ball from "../assets/ball.png";
 import guy from "../assets/guy.png";
 import beard from "../assets/beard.png";
 import lady from "../assets/lady.png";
+import arro from "../assets/arro.png";
+
 
 const Body = () => {
   return (
@@ -138,7 +140,7 @@ const Body = () => {
               <img src={linkedin} alt="" />
             </a>
           </div>
-          <div className="arrow"></div>
+          <div className="arrow"><a href=""><img src={arro} alt="" /></a></div>
         </div>
       </div>
     </>
