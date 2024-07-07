@@ -6,9 +6,8 @@
 }
 
 body{
-    background-color: #ecf0f3;
+    background-color: #dbdfe1;
     font-family: "Poppins", sans-serif;
-    /* font-style: normal; */
 }
 
 li{
@@ -23,3 +22,8 @@ li{
 
 a{
 text-decoration: none;}
+
+.icon{
+    color: black;
+    font-size: 25px;
+  }

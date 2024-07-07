@@ -1,5 +1,5 @@
 .navBar {
-  background-color: #ecf0f3;
+  background-color: #dbdfe1;
   width: 100%;
 }
 
@@ -21,7 +21,7 @@
 
 .navHeadings li {
   margin: 15px;
-  color: #bebfc5;
+  color: #737171;
 }
 
 .search {
@@ -40,13 +40,11 @@
   right: 5px;
   top: 5px;
 }
-
 .icons {
   height: 30px;
   width: 150px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .icons img{
@@ -54,3 +52,4 @@
   height: 30px;
   border-radius: 50%;
 }
+

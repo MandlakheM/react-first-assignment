@@ -1,18 +1,18 @@
 import React from "react";
 import "./body.css";
-import dollar from "../assets/dollar.png";
+import { BsCurrencyDollar } from "react-icons/bs";
 import arrow from "../assets/arrow.png";
-import circleArrow from "../assets/circle_arrow.png";
-import facebook from "../assets/facebook.png";
-import insta from "../assets/insta.png";
-import twitter from "../assets/twitter.png";
-import linkedin from "../assets/linkedin.png";
-import ball from "../assets/ball.png";
+import { IoIosArrowDropright } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { FiTwitter } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { RiBasketballLine } from "react-icons/ri";
 import guy from "../assets/guy.png";
 import beard from "../assets/beard.png";
 import lady from "../assets/lady.png";
-import arro from "../assets/arro.png";
-
+import { FaArrowRight } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 
 const Body = () => {
   return (
@@ -28,7 +28,7 @@ const Body = () => {
           <div className="price">
             <h1>99</h1>
             <div id="dollar">
-              <img src={dollar} alt="" />
+            <BsCurrencyDollar />
             </div>
             <h5>
               $99/yearly. The standard VAT rate may be charged, following the
@@ -44,7 +44,7 @@ const Body = () => {
 
       <div className="featuredArtistContainer gutter">
         <div>
-          <h3>Featured Artist</h3>
+          <h3 id="featuredText">Featured Artist</h3>
         </div>
         <img src={arrow} alt="" />
 
@@ -58,7 +58,9 @@ const Body = () => {
           <h6>motion</h6>
         </div>
         <div className="rainbowItems rainbow-4">
-          <img src={circleArrow} alt="" />
+          <a href="">
+            <IoIosArrowDropright className="icon" />
+          </a>
         </div>
       </div>
       <div className="artistWrapper gutter">
@@ -67,9 +69,11 @@ const Body = () => {
 
           <div className="innerArtist">
             <div>
-              <h6 id="name">Zain Sajid</h6>
-              <h6>Remote</h6>
-              <button>Follow</button>
+              <h6>Zain Sajid</h6>
+              <h6 id="name">Remote</h6>
+              <button>
+                Follow <FaPlus />
+              </button>
             </div>
             <div id="status">
               <div id="whiteDot">
@@ -84,9 +88,11 @@ const Body = () => {
 
           <div className="innerArtist">
             <div>
-              <h6 id="name">Moty Weiss</h6>
-              <h6>Narawal</h6>
-              <button>Follow</button>
+              <h6>Moty Weiss</h6>
+              <h6 id="name">Narawal</h6>
+              <button>
+                Follow <FaPlus />
+              </button>
             </div>
             <div>
               <div id="status">
@@ -105,7 +111,9 @@ const Body = () => {
             <div>
               <h6>Alena Aulova</h6>
               <h6 id="name">Ukraine</h6>
-              <button>Follow</button>
+              <button>
+                Follow <FaPlus />
+              </button>
             </div>
             <div>
               <div id="status">
@@ -121,26 +129,33 @@ const Body = () => {
           <div>
             <div className="followUs">
               <a href="">
-                <img src={ball} alt="" />
+                <RiBasketballLine className="icon" />{" "}
               </a>
               <h6>Follow Us</h6>
+              <div id="longerRed"></div>
+
             </div>
           </div>
           <div className="socialIcons">
             <a href="">
-              <img src={facebook} alt="" />
+              <FaFacebookF className="icon" />{" "}
             </a>
             <a href="">
-              <img src={insta} alt="" />
+              <BsInstagram className="icon" />{" "}
             </a>
             <a href="">
-              <img src={twitter} alt="" />
+              <FiTwitter className="icon" />{" "}
             </a>
             <a href="">
-              <img src={linkedin} alt="" />
+              <FaLinkedinIn className="icon" />{" "}
+            </a>
+            <div className="red"></div>
+          </div>
+          <div className="arrow">
+            <a href="">
+              <FaArrowRight className="icon" />{" "}
             </a>
           </div>
-          <div className="arrow"><a href=""><img src={arro} alt="" /></a></div>
         </div>
       </div>
     </>

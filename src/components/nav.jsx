@@ -1,5 +1,7 @@
 import React from "react";
 import "./nav.css";
+import { FaBell } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import logo from "../assets/logo.png";
 import search from "../assets/search.png";
 import bell from "../assets/bell.png";
@@ -29,8 +31,8 @@ const Nav = () => {
         </div>
 
         <div className="icons">
-          <a href=""><img src={bell} alt="" /></a>
-          <a href=""><img src={mail} alt="" /></a>
+          <a href=""><FaBell className="icon" /></a>
+          <a href=""><IoMdMail className="icon" /></a>
           <a href=""><img src={pic} alt="" /></a>
         </div>
       </div>

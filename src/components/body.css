@@ -1,5 +1,5 @@
 .bodyContainer {
-  margin-top: 25px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,20 +8,23 @@
 #large {
   font-size: 50px;
   line-height: 1.5;
-  font-weight: 300px;
+  font-weight: 400;
 }
 
 #small {
-  color: #d6d6d6;
+  color: #737171;
   font-size: 25px;
   padding-top: 20px;
+  font-weight: 400;
 }
+
 .priceWrapper {
   width: 400px;
   height: 190px;
   /* background-color: brown; */
   margin-right: 10%;
   position: relative;
+  
 }
 
 .background {
@@ -31,6 +34,8 @@
   position: absolute;
   bottom: 0;
   border-radius: 1em;
+  box-shadow: 10px 10px 5px #bebfc5;
+
 }
 
 .price {
@@ -92,6 +97,9 @@
   position: absolute;
   top: 1rem;
   left: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #dollar img {
@@ -101,8 +109,14 @@
 .featuredArtistContainer {
   display: flex;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 25px;
+}
+
+#featuredText {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .featuredArtistContainer img {
@@ -217,15 +231,10 @@
 }
 
 .rainbow-4 {
-  background-color: #d6d6d6;
-  display: grid;
-  /* justify-content: center; */
+  background-color: #bebfc5;
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.rainbow-4 img {
-  width: 33px;
-  height: 30px;
 }
 
 .artistWrapper {
@@ -257,7 +266,7 @@
   position: absolute;
   z-index: 1;
   top: 0.5rem;
-  right: 1rem;
+  right: 2rem;
   width: 110px;
   height: 160px;
 }
@@ -266,7 +275,7 @@
   position: absolute;
   z-index: 1;
   top: 0.5rem;
-  right: 2rem;
+  right: 2.5rem;
   width: 110px;
   height: 160px;
 }
@@ -282,10 +291,12 @@
   display: flex;
   justify-content: space-around;
   align-items: end;
+  box-shadow: 10px 10px 5px #bebfc5;
 }
 
-#name h6 {
-  color: #d6d6d6;
+#name {
+  color: #737171;
+  font-weight: 300;
 }
 
 .innerArtist h6 {
@@ -299,7 +310,8 @@
   width: 350px;
   height: 200px;
   clip-path: polygon(66% 1%, 100% 33%, 100% 100%, 66% 60%);
-  background-color: #f47036;
+  background-color: #ed6b36;
+  
 }
 
 #status {
@@ -307,11 +319,11 @@
 }
 
 #parallelographPurple {
-  background-color: #8035e5;
+  background-color: #6f30cf;
 }
 
 #parallelographRed {
-  background-color: #fd2515;
+  background-color: #de1959;
 }
 
 #whiteDot {
@@ -334,11 +346,14 @@
 .innerArtist button {
   background-color: #001d2b;
   color: #d6d6d6;
-  width: 100px;
+  width: 80px;
   height: 35px;
   border-radius: 0.5rem;
-  font-size: 20px;
+  font-size: 15px;
   border-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .follow {
@@ -372,9 +387,17 @@
   /* background-color: #fd2515; */
 }
 
-.follow img {
-  width: 30px;
-  height: auto;
+.red{
+  width: 25px;
+  height: 5px;
+  background-color:hsla(0, 88%, 49%, 1);
+}
+
+#longerRed{
+  width: 170px;
+  height: 5px;
+  background-color:hsla(0, 88%, 49%, 1);
+ 
 }
 
 .arrow {
@@ -383,12 +406,10 @@
   background-color: #ebebeb;
   width: 50px;
   height: 35px;
-  border-radius: 40%;
-}
-
-.arro img {
-  width: 25px;
-  height: 25px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1500px) {
@@ -400,13 +421,13 @@
 }
 
 @media screen and (max-width: 1008px) {
-  .artistWrapper{
-    display:inline-flex;
+  .artistWrapper {
+    display: inline-flex;
     flex-wrap: wrap;
   }
 
-  .bodyContainer{
-    display:inline-flex;
+  .bodyContainer {
+    display: inline-flex;
     flex-wrap: wrap;
   }
 }
