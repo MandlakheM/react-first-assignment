@@ -311,7 +311,7 @@
   height: 200px;
   clip-path: polygon(66% 1%, 100% 33%, 100% 100%, 66% 60%);
   background-color: #ed6b36;
-  
+   
 }
 
 #status {
@@ -320,6 +320,7 @@
 
 #parallelographPurple {
   background-color: #6f30cf;
+  inset: (10% 45% 0% 45% round 10px);
 }
 
 #parallelographRed {
