@@ -43,9 +43,7 @@ const Body = () => {
       </div>
 
       <div className="featuredArtistContainer gutter">
-        <div>
           <h3 id="featuredText">Featured Artist</h3>
-        </div>
         <img src={arrow} alt="" />
 
         <div className="rainbowItems rainbow-1">

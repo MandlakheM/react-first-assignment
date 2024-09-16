@@ -11,15 +11,19 @@
 
 .logo img {
   width: 120px;
-  height:50px;
+  height: 50px;
   margin-left: 0;
 }
 
 .navHeadings ul {
   display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.navHeadings li {
+.navHeadings li,
+.navHeadings a {
   margin: 15px;
   color: #737171;
 }
@@ -40,6 +44,7 @@
   right: 5px;
   top: 5px;
 }
+
 .icons {
   height: 30px;
   width: 150px;
@@ -47,9 +52,109 @@
   justify-content: space-between;
 }
 
-.icons img{
+.icons img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #737171;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navHeadings {
+    display: none;
+    width: 100%;
+    background-color: #dbdfe1;
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    left: 0;
+  }
+
+  .navHeadings.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navHeadings ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .navHeadings li {
+    width: 100%;
+
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navHeadings a {
+    display: block;
+    color: #737171;
+    text-decoration: none;
+  }
+
+  .navHeadings a:hover {
+    background-color: #eee;
+  }
+}
+
+@media (max-width: 1130px) {
+  .logo img {
+    width: 80px;
+    height: 50px;
+  }
+  .navHeadings li {
+    font-size: 0.7rem;
+  }
+  .search {
+    width: 40px;
+    margin-left: auto;
+  }
+  .icons {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media (max-width: 830px) {
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search {
+    display: grid;
+    place-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    background-color: transparent;
+  }
+}
